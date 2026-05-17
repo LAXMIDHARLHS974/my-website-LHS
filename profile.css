@@ -1,0 +1,495 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url("photo/back.jpg") repeat-y center fixed;
+  background-size: cover;
+  overflow-x: hidden;
+  font-family:
+    Figtree-Regular,
+    -apple-system,
+    BlinkMacSystemFont,
+    Segoe UI,
+    Roboto,
+    Helvetica,
+    Arial,
+    sans-serif;
+}
+.profile_id {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.profile_id img {
+  height: 90px;
+  width: 90px;
+  object-fit: cover;
+}
+
+nav {
+  position: fixed;
+  width: 220px;
+  height: 100vh;
+  background-color: rgb(255, 255, 255, 0.1);
+  padding-top: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.9);
+}
+.side_bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.side_bar a {
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 80%;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 0.3s;
+  text-align: center;
+  color: #dbeafe;
+}
+
+.side_bar a:hover {
+  background: rgba(229, 88, 88, 0.1);
+  color: #22d3ee;
+}
+
+/* this for my profile page */
+.about {
+  margin-left: 260px;
+  padding: 60px;
+  color: white;
+}
+
+.about h1 {
+  font-size: 55px;
+  margin-bottom: 20px;
+}
+
+.about h1 span {
+  color: #ffffff;
+}
+
+.about p {
+  font-size: 20px;
+  max-width: 700px;
+  line-height: 1.7;
+  margin-bottom: 20px;
+  color: #e2e8f0;
+}
+
+.about span {
+  color: #22d3ee;
+  font-weight: bold;
+}
+
+.info {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.info div {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 15px 20px;
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+}
+/* for my Skill page */
+.skills_section {
+  margin-left: 250px;
+  padding: 60px;
+  color: white;
+}
+
+.skills_section h1 {
+  font-size: 50px;
+  margin-bottom: 40px;
+
+  color: #22d3ee;
+
+  text-shadow: 0 0 10px #22d3ee;
+}
+
+.skills_container {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+
+  gap: 25px;
+}
+
+.skill_card {
+  background: rgba(255, 255, 255, 0.08);
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  backdrop-filter: blur(10px);
+
+  border-radius: 20px;
+
+  padding: 30px;
+
+  transition: 0.4s;
+
+  animation: fadeUp 1s ease;
+}
+
+.skill_card:hover {
+  transform: translateY(-10px) scale(1.03);
+
+  box-shadow: 0 0 25px rgba(34, 211, 238, 0.4);
+}
+
+.skill_card h2 {
+  color: #ffffff;
+
+  margin-bottom: 10px;
+
+  font-size: 28px;
+}
+
+.skill_card p {
+  color: #cbd5e1;
+
+  line-height: 1.6;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* For my Contact Page */
+.contact {
+  margin-left: 250px;
+
+  padding: 60px;
+
+  color: white;
+}
+
+.contact h1 {
+  font-size: 55px;
+
+  color: #22d3ee;
+
+  margin-bottom: 15px;
+
+  text-shadow: 0 0 15px #22d3ee;
+}
+
+.contact p {
+  color: #cbd5e1;
+
+  margin-bottom: 40px;
+
+  font-size: 18px;
+}
+
+.contact_container {
+  display: flex;
+
+  gap: 40px;
+
+  flex-wrap: wrap;
+}
+
+form {
+  flex: 1;
+
+  min-width: 320px;
+
+  background: rgba(255, 255, 255, 0.08);
+
+  padding: 35px;
+
+  border-radius: 20px;
+
+  backdrop-filter: blur(10px);
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+form input,
+form textarea {
+  width: 100%;
+
+  padding: 15px;
+
+  margin-bottom: 20px;
+
+  border: none;
+
+  outline: none;
+
+  border-radius: 12px;
+
+  background: rgba(255, 255, 255, 0.08);
+
+  color: white;
+
+  font-size: 16px;
+}
+
+form textarea {
+  height: 150px;
+
+  resize: none;
+}
+
+form button {
+  width: 100%;
+
+  padding: 15px;
+
+  border: none;
+
+  border-radius: 12px;
+
+  background: linear-gradient(45deg, #7c3aed, #22d3ee);
+
+  color: white;
+
+  font-size: 18px;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+form button:hover {
+  transform: scale(1.03);
+
+  box-shadow: 0 0 20px rgba(34, 211, 238, 0.4);
+}
+
+.contact_info {
+  flex: 1;
+
+  min-width: 280px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 20px;
+}
+
+.contact_info div {
+  background: rgba(255, 255, 255, 0.08);
+
+  padding: 20px;
+
+  border-radius: 15px;
+
+  backdrop-filter: blur(10px);
+
+  transition: 0.3s;
+}
+
+.contact_info div:hover {
+  transform: translateX(10px);
+
+  box-shadow: 0 0 20px rgba(124, 58, 237, 0.3);
+}
+/* For my Project */
+.projects {
+  margin-left: 250px;
+
+  padding: 60px;
+
+  color: white;
+}
+
+.projects h1 {
+  font-size: 55px;
+
+  color: #22d3ee;
+
+  margin-bottom: 15px;
+
+  text-shadow: 0 0 15px #22d3ee;
+}
+
+.projects p {
+  color: #cbd5e1;
+
+  margin-bottom: 40px;
+
+  line-height: 1.7;
+}
+
+.project_container {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+  gap: 30px;
+}
+
+.project_card {
+  background: rgba(255, 255, 255, 0.08);
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  border-radius: 25px;
+
+  padding: 30px;
+
+  backdrop-filter: blur(10px);
+
+  transition: 0.4s;
+
+  position: relative;
+
+  overflow: hidden;
+
+  animation: fadeUp 1s ease;
+}
+
+.project_card::before {
+  content: "";
+
+  position: absolute;
+
+  top: -100%;
+
+  left: -100%;
+
+  width: 250%;
+
+  height: 250%;
+
+  background: linear-gradient(
+    45deg,
+    transparent,
+    rgba(34, 211, 238, 0.15),
+    transparent
+  );
+
+  transform: rotate(25deg);
+
+  transition: 0.8s;
+}
+
+.project_card:hover::before {
+  top: 0;
+  left: 0;
+}
+
+.project_card:hover {
+  transform: translateY(-12px) scale(1.02);
+
+  box-shadow: 0 0 30px rgba(34, 211, 238, 0.3);
+}
+
+.project_img {
+  width: 80px;
+  height: 80px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 40px;
+
+  border-radius: 20px;
+
+  margin-bottom: 20px;
+
+  background: linear-gradient(45deg, #7c3aed, #22d3ee);
+
+  animation: float 3s ease-in-out infinite;
+}
+
+.project_card h2 {
+  font-size: 28px;
+
+  margin-bottom: 15px;
+}
+
+.tech {
+  display: flex;
+
+  gap: 10px;
+
+  flex-wrap: wrap;
+
+  margin-top: 20px;
+}
+
+.tech span {
+  background: rgba(255, 255, 255, 0.08);
+
+  padding: 8px 15px;
+
+  border-radius: 30px;
+
+  color: #22d3ee;
+
+  font-size: 14px;
+}
+
+.project_card button {
+  margin-top: 25px;
+
+  padding: 12px 25px;
+
+  border: none;
+
+  border-radius: 12px;
+
+  background: linear-gradient(45deg, #7c3aed, #22d3ee);
+
+  color: white;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.project_card button:hover {
+  transform: scale(1.05);
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
