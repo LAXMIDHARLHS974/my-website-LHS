@@ -59,9 +59,6 @@ This website is created to:
 * Practice front-end development.
 * Build a professional online portfolio.
 
-## 📸 Preview
-
-> Add screenshots of your website here.
 
 ## 📈 Future Improvements
 
