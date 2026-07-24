@@ -180,3 +180,36 @@
 }
 
 }
+/* ===========================
+   HOME PAGE SCROLL FIX
+=========================== */
+
+@media (min-width:769px){
+
+    .home-page{
+        overflow:hidden;
+        height:100vh;
+    }
+
+    .home-page .hero{
+        height:100vh;
+        overflow:hidden;
+    }
+
+}
+
+@media (max-width:768px){
+
+    .home-page{
+        overflow-y:auto;
+        overflow-x:hidden;
+        height:auto;
+    }
+
+    .home-page .hero{
+        height:auto;
+        min-height:auto;
+        overflow:visible;
+    }
+
+}
