@@ -2,149 +2,809 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Projects | Laxmidhar Sahoo</title>
 
+    <!-- Existing CSS -->
+
     <link rel="stylesheet" href="../CSS/style.css" />
+
     <link rel="stylesheet" href="../CSS/responsive.css" />
+
     <link rel="stylesheet" href="../CSS/animation.css" />
+
+    <!-- Project CSS -->
+
+    <link rel="stylesheet" href="../CSS/project.css" />
+
+    <!-- Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
-    <!-- Background Video -->
+    <!-- =====================================================
+         BACKGROUND VIDEO
+    ====================================================== -->
+
     <video autoplay muted loop playsinline id="bg-video">
-    <source src="../video/singularity-cosmic-vortex-moewalls-com.mp4" type="video/mp4">
-</video>
+      <source
+        src="../video/singularity-cosmic-vortex-moewalls-com.mp4"
+        type="video/mp4"
+      />
+    </video>
+
+    <!-- =====================================================
+         SIDEBAR
+         KEEP YOUR STRUCTURE
+    ====================================================== -->
+
     <header>
       <button class="menu-btn" onclick="toggleSidebar()">☰</button>
 
       <nav id="sidebar">
         <div class="profile_id">
-          <img src="../photo/profile.jpeg" alt="Profile" />
-          <b style="color: white">Laxmidhar</b>
+          <img src="../photo/profile.jpeg" alt="Laxmidhar Sahoo" />
+
+          <b> Laxmidhar </b>
         </div>
 
         <div class="side_bar">
-          <a href="../index.html">🏠 Home</a>
-          <a href="skill.html">💻 Skills</a>
-          <a href="project.html">📂 Projects</a>
-          <a href="contact.html">📞 Contact</a>
+          <a href="../index.html"> 🏠 Home </a>
+
+          <a href="skill.html"> 💻 Skills </a>
+
+          <a href="project.html" class="project-active"> 📂 Projects </a>
+
+          <a href="contact.html"> 📞 Contact </a>
         </div>
       </nav>
     </header>
 
-    <main>
-      <section class="projects">
-        <h1>My Projects</h1>
+    <!-- =====================================================
+         PROJECT PAGE
+    ====================================================== -->
 
-        <p>
-          Here are some projects I have built while learning Java Full Stack
-          Development.
-        </p>
+    <main class="project-page">
+      <!-- =================================================
+             PROJECT HEADER
+        ================================================== -->
 
-        <div class="project_container">
-          <!-- Project 1 -->
+      <section class="project-hero">
+        <div class="hero-title">
+          <h1>Projects<span>.</span></h1>
+        </div>
 
-          <div class="project_card">
-            <div class="project_img">🌐</div>
+        <div class="hero-description">
+          <span class="hero-scroll">
+            SCROLL TO EXPLORE
+            <b>↓</b>
+          </span>
+        </div>
+      </section>
 
-            <h2>Portfolio Website</h2>
+      <!-- =================================================
+             SCROLL PROJECT SHOWCASE
+        ================================================== -->
 
-            <p>
-              Personal portfolio built using HTML, CSS and JavaScript with
-              responsive design.
-            </p>
+      <section class="project-scroll">
+        <div class="project-pin">
+          <!-- Counter -->
 
-            <div class="tech">
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>JavaScript</span>
-            </div>
+          <div class="project-counter">
+            <strong id="projectNumber"> 01 </strong>
 
-            <div class="project_buttons">
-              <a
-                href="https://laxmidharlhs974.github.io/my-website-LHS/"
-                target="_blank"
-                class="btn"
-              >
-                Live Demo
-              </a>
-
-              <a
-                href="https://github.com/LAXMIDHARLHS974/my-website-LHS"
-                target="_blank"
-                class="btn btn2"
-              >
-                GitHub
-              </a>
-            </div>
+            <span> / 06 </span>
           </div>
 
-          <!-- Project 2 -->
+          <!-- Dots -->
 
-          <div class="project_card">
-            <div class="project_img">🏦</div>
-
-            <h2>Java Banking System</h2>
-
-            <p>
-              A console-based banking application developed in Java that allows
-              users to create accounts, deposit money, withdraw funds, transfer
-              money, check balances, and manage customer records using
-              object-oriented programming concepts.
-            </p>
-
-            <div class="tech">
-              <span>Java</span>
-              <span>OOP</span>
-              <span>Collections</span>
-              <span>File Handling</span>
-            </div>
-
-            <div class="project_buttons">
-              <a href="#" class="btn"> Live Demo </a>
-
-              <a
-                href="https://github.com/LAXMIDHARLHS974"
-                target="_blank"
-                class="btn btn2"
-              >
-                GitHub
-              </a>
-            </div>
+          <div class="project-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
           </div>
 
-          <!-- Project 3 -->
+          <!-- Project wrapper -->
 
-          <div class="project_card">
-            <div class="project_img">🎓</div>
+          <div class="project-wrapper">
+            <!-- =================================================
+                         PROJECT 01
+                    ================================================== -->
 
-            <h2>Student Management System</h2>
+            <article class="project-item active" data-index="0">
+              <!-- Preview -->
 
-            <p>Java-based CRUD application for managing student records.</p>
+              <div class="project-preview">
+                <div class="browser-header">
+                  <div class="browser-controls">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                  </div>
 
-            <div class="tech">
-              <span>Java</span>
-              <span>MySQL</span>
-              <span>JDBC</span>
-            </div>
+                  <div class="browser-url">laxmidhar.dev</div>
 
-            <div class="project_buttons">
-              <a href="#" class="btn"> Live Demo </a>
+                  <div class="browser-menu">⋮</div>
+                </div>
 
-              <a
-                href="https://student-record-management-system-brf8.onrender.com/"
-                target="_blank"
-                class="btn btn2"
-              >
-                GitHub
-              </a>
-            </div>
+                <div class="preview-screen portfolio-screen">
+                  <div class="portfolio-nav">
+                    <strong> Laxmidhar. </strong>
+
+                    <div>
+                      <span> Home </span>
+
+                      <span> About </span>
+
+                      <span> Projects </span>
+
+                      <span> Contact </span>
+                    </div>
+                  </div>
+
+                  <div class="portfolio-body">
+                    <span class="mini-label"> ● JAVA DEVELOPER </span>
+
+                    <h3>
+                      Building scalable
+                      <br />
+                      solutions with
+                      <em>clean code.</em>
+                    </h3>
+
+                    <p>
+                      Passionate about backend development, system design and
+                    </p>
+
+                    <div class="mock-buttons">
+                      <button>View Projects</button>
+
+                      <button>Contact Me</button>
+                    </div>
+
+                    <div class="cube-scene">
+                      <div class="cube cube-main"></div>
+
+                      <div class="cube cube-small"></div>
+
+                      <div class="cube cube-small two"></div>
+
+                      <div class="cube cube-small three"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Information -->
+
+              <div class="project-info">
+                <span class="project-kicker"> FEATURED PROJECT </span>
+
+                <h2>
+                  Portfolio
+                  <br />
+                  Website
+                </h2>
+                <div class="info-divider"></div>
+
+                <span class="info-label"> TECH STACK </span>
+
+                <div class="stack-list">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
+                </div>
+
+                <div class="info-divider"></div>
+
+                <span class="info-label"> KEY FEATURES </span>
+
+                <ul class="feature-list">
+                  <li>Responsive layout</li>
+
+                  <li>Modern UI</li>
+
+                  <li>Smooth animations</li>
+
+                  <li>Optimized performance</li>
+                </ul>
+
+                <div class="project-actions">
+                  <a
+                    href="https://laxmidharlhs974.github.io/my-website-LHS/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="action-live"
+                  >
+                    Live Demo
+                    <span>↗</span>
+                  </a>
+
+                  <a
+                    href="https://github.com/LAXMIDHARLHS974/my-website-LHS"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="action-github"
+                  >
+                    GitHub
+                    <span>↗</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- =================================================
+                         PROJECT 02
+                    ================================================== -->
+
+            <article class="project-item" data-index="1">
+              <div class="project-preview">
+                <div class="browser-header">
+                  <div class="browser-controls">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                  </div>
+
+                  <div class="browser-url">java-banking</div>
+
+                  <div class="browser-menu">⋮</div>
+                </div>
+
+                <div class="preview-screen banking-screen">
+                  <div class="terminal-box">
+                    <div class="terminal-command">$ java BankingSystem</div>
+
+                    <br />
+
+                    <div>Welcome to Banking System</div>
+
+                    <br />
+
+                    <div>1. Create Account</div>
+
+                    <div>2. Deposit</div>
+
+                    <div>3. Withdraw</div>
+
+                    <div>4. Transfer</div>
+
+                    <div>5. Check Balance</div>
+
+                    <br />
+
+                    <div class="terminal-active">Select option: _</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="project-info">
+                <span class="project-kicker"> JAVA PROJECT </span>
+
+                <h2>
+                  Java Banking
+                  <br />
+                  System
+                </h2>
+                <div class="info-divider"></div>
+
+                <span class="info-label"> TECH STACK </span>
+
+                <div class="stack-list">
+                  <span>Java</span>
+                  <span>OOP</span>
+                  <span>Collections</span>
+                  <span>File Handling</span>
+                </div>
+
+                <div class="info-divider"></div>
+
+                <span class="info-label"> KEY FEATURES </span>
+
+                <ul class="feature-list">
+                  <li>Account management</li>
+
+                  <li>Deposits and withdrawals</li>
+
+                  <li>Fund transfer</li>
+
+                  <li>Balance checking</li>
+                </ul>
+
+                <div class="project-actions">
+                  <a
+                    href="https://github.com/LAXMIDHARLHS974"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="action-live"
+                  >
+                    Source Code
+                    <span>↗</span>
+                  </a>
+
+                  <a
+                    href="https://github.com/LAXMIDHARLHS974"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="action-github"
+                  >
+                    GitHub
+                    <span>↗</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- =================================================
+                         PROJECT 03
+                    ================================================== -->
+
+            <article class="project-item" data-index="2">
+              <div class="project-preview">
+                <div class="browser-header">
+                  <div class="browser-controls">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                  </div>
+
+                  <div class="browser-url">student-management</div>
+
+                  <div class="browser-menu">⋮</div>
+                </div>
+
+                <div class="preview-screen student-screen">
+                  <div class="student-app">
+                    <aside>STUDENTS</aside>
+
+                    <div class="student-content">
+                      <small> STUDENT MANAGEMENT </small>
+
+                      <h3>Dashboard</h3>
+
+                      <div class="student-metrics">
+                        <div>
+                          <strong> 128 </strong>
+
+                          <span> Students </span>
+                        </div>
+
+                        <div>
+                          <strong> 24 </strong>
+
+                          <span> Classes </span>
+                        </div>
+
+                        <div>
+                          <strong> 08 </strong>
+
+                          <span> Courses </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="project-info">
+                <span class="project-kicker"> JAVA FULL STACK </span>
+
+                <h2>
+                  Student
+                  <br />
+                  Management
+                </h2>
+                <div class="info-divider"></div>
+
+                <span class="info-label"> TECH STACK </span>
+
+                <div class="stack-list">
+                  <span>Java</span>
+                  <span>MySQL</span>
+                  <span>JDBC</span>
+                </div>
+
+                <div class="info-divider"></div>
+
+                <span class="info-label"> KEY FEATURES </span>
+
+                <ul class="feature-list">
+                  <li>Add students</li>
+
+                  <li>Update records</li>
+
+                  <li>Delete records</li>
+
+                  <li>View information</li>
+                </ul>
+
+                <div class="project-actions">
+                  <a
+                    href="https://student-record-management-system-brf8.onrender.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="action-live"
+                  >
+                    Live Demo
+                    <span>↗</span>
+                  </a>
+
+                  <a
+                    href="https://github.com/LAXMIDHARLHS974"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="action-github"
+                  >
+                    GitHub
+                    <span>↗</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- =================================================
+                         PROJECT 04
+                    ================================================== -->
+
+            <article class="project-item" data-index="3">
+              <div class="project-preview">
+                <div class="browser-header">
+                  <div class="browser-controls">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                  </div>
+
+                  <div class="browser-url">agri-connect</div>
+
+                  <div class="browser-menu">⋮</div>
+                </div>
+
+                <div class="preview-screen agri-screen">
+                  <div class="agri-app">
+                    <div class="agri-nav">AgriConnect</div>
+
+                    <div class="agri-main">
+                      <div class="agri-copy">
+                        <small> AGRICULTURE MARKET </small>
+
+                        <h3>
+                          Connect.
+                          <br />
+                          Sell.
+                          <br />
+                          Grow.
+                        </h3>
+
+                        <button>Explore Market</button>
+                      </div>
+
+                      <div class="agri-items">
+                        <span> 🌾 </span>
+
+                        <span> 🌽 </span>
+
+                        <span> 🥔 </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="project-info">
+                <span class="project-kicker"> FULL STACK PLATFORM </span>
+
+                <h2>AgriConnect</h2>
+                <div class="info-divider"></div>
+
+                <span class="info-label"> TECH STACK </span>
+
+                <div class="stack-list">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
+                  <span>Java</span>
+                  <span>MySQL</span>
+                </div>
+
+                <div class="info-divider"></div>
+
+                <span class="info-label"> KEY FEATURES </span>
+
+                <ul class="feature-list">
+                  <li>Farmer marketplace</li>
+
+                  <li>Product management</li>
+
+                  <li>Market connection</li>
+
+                  <li>Full-stack architecture</li>
+                </ul>
+
+                <div class="project-actions">
+                  <a
+                    href="https://agri-connect-one-delta.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="action-live"
+                  >
+                    Live Demo
+                    <span>↗</span>
+                  </a>
+
+                  <a
+                    href="https://github.com/LAXMIDHARLHS974/AgriConnect"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="action-github"
+                  >
+                    GitHub
+                    <span>↗</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- =================================================
+                         PROJECT 05
+                    ================================================== -->
+
+            <article class="project-item" data-index="4">
+              <div class="project-preview">
+                <div class="browser-header">
+                  <div class="browser-controls">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                  </div>
+
+                  <div class="browser-url">codeguard-lhs</div>
+
+                  <div class="browser-menu">⋮</div>
+                </div>
+
+                <div class="preview-screen code-screen">
+                  <div class="code-app">
+                    <div class="code-top">CodeGuard AI</div>
+
+                    <div class="code-content">
+                      <div class="line-numbers">
+                        01<br />
+                        02<br />
+                        03<br />
+                        04<br />
+                        05<br />
+                        06
+                      </div>
+
+                      <div class="code-text">
+                        <div>
+                          function
+                          <b> validateUser() </b>
+                        </div>
+
+                        <div>const token = request.auth</div>
+
+                        <div>if (!token)</div>
+
+                        <div>return unauthorized()</div>
+
+                        <div>security.scan()</div>
+
+                        <div>regression.test()</div>
+                      </div>
+                    </div>
+
+                    <div class="security-result">● SECURITY CHECK PASSED</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="project-info">
+                <span class="project-kicker"> AI / SECURITY </span>
+
+                <h2>
+                  CodeGuard
+                  <br />
+                  AI
+                </h2>
+                <div class="info-divider"></div>
+
+                <span class="info-label"> TECH STACK </span>
+
+                <div class="stack-list">
+                  <span>JavaScript</span>
+                  <span>AI</span>
+                  <span>Gemini</span>
+                </div>
+
+                <div class="info-divider"></div>
+
+                <span class="info-label"> KEY FEATURES </span>
+
+                <ul class="feature-list">
+                  <li>Code analysis</li>
+
+                  <li>Security detection</li>
+
+                  <li>Risk calculation</li>
+
+                  <li>Regression testing</li>
+                </ul>
+
+                <div class="project-actions">
+                  <a
+                    href="https://codeguard-lhs.onrender.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="action-live"
+                  >
+                    Live Demo
+                    <span>↗</span>
+                  </a>
+
+                  <a
+                    href="https://github.com/LAXMIDHARLHS974"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="action-github"
+                  >
+                    GitHub
+                    <span>↗</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- =================================================
+                         PROJECT 06
+                    ================================================== -->
+
+            <article class="project-item" data-index="5">
+              <div class="project-preview">
+                <div class="browser-header">
+                  <div class="browser-controls">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                  </div>
+
+                  <div class="browser-url">student-study-dashboard</div>
+
+                  <div class="browser-menu">⋮</div>
+                </div>
+
+                <div class="preview-screen study-screen">
+                  <div class="study-app">
+                    <div class="study-nav">Study Dashboard</div>
+
+                    <div class="study-body">
+                      <p>
+                        Good morning,
+                        <strong> Student. </strong>
+                      </p>
+
+                      <div class="study-metrics">
+                        <div>
+                          <strong> 04:25 </strong>
+
+                          <span> STUDY TIME </span>
+                        </div>
+
+                        <div>
+                          <strong> 07 </strong>
+
+                          <span> DAY STREAK </span>
+                        </div>
+
+                        <div>
+                          <strong> 82% </strong>
+
+                          <span> GOAL </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="project-info">
+                <span class="project-kicker"> PRODUCTIVITY </span>
+
+                <h2>
+                  Student Study
+                  <br />
+                  Tracker
+                </h2>
+                <div class="info-divider"></div>
+
+                <span class="info-label"> TECH STACK </span>
+
+                <div class="stack-list">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
+                </div>
+
+                <div class="info-divider"></div>
+
+                <span class="info-label"> KEY FEATURES </span>
+
+                <ul class="feature-list">
+                  <li>Study sessions</li>
+
+                  <li>Pomodoro</li>
+
+                  <li>Analytics</li>
+
+                  <li>Revision planning</li>
+                </ul>
+
+                <div class="project-actions">
+                  <a
+                    href="https://laxmidharlhs974.github.io/student-study-dashboard/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="action-live"
+                  >
+                    Live Demo
+                    <span>↗</span>
+                  </a>
+
+                  <a
+                    href="https://github.com/LAXMIDHARLHS974"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="action-github"
+                  >
+                    GitHub
+                    <span>↗</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Bottom scroll -->
+
+          <div class="scroll-indicator-bottom">
+            <span class="mouse-icon"></span>
+
+            <span> SCROLL TO EXPLORE </span>
           </div>
         </div>
       </section>
     </main>
 
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <!-- GSAP first -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+    <!-- Existing JS -->
+
     <script src="../JS/script.js"></script>
+
+    <!-- Project JS -->
+
+    <script src="../JS/project.js"></script>
   </body>
 </html>

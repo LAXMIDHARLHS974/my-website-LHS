@@ -213,3 +213,831 @@
     }
 
 }
+/* =========================================================
+   PROJECT PAGE - FULL RESPONSIVE SYSTEM
+   Desktop / Laptop / Tablet / Mobile
+========================================================= */
+
+
+/* =========================================================
+   LARGE DESKTOP
+   1600px+
+========================================================= */
+
+@media (min-width: 1600px) {
+
+  .new_projects_page {
+    width: calc(100% - 280px);
+    margin-left: 280px;
+
+    padding: 90px 7vw 120px;
+  }
+
+  .projects_intro,
+  .project_stats,
+  .featured_project_new,
+  .other_projects,
+  .projects_bottom {
+    max-width: 1450px;
+  }
+
+  .projects_intro h1 {
+    font-size: 110px;
+  }
+
+  .featured_grid {
+    min-height: 600px;
+  }
+
+  .featured_visual_new {
+    min-height: 600px;
+  }
+
+  .new_project_grid {
+    gap: 28px;
+  }
+
+  .card_visual {
+    height: 310px;
+  }
+
+}
+
+
+/* =========================================================
+   LAPTOP
+   1200px - 1599px
+========================================================= */
+
+@media (min-width: 1200px) and (max-width: 1599px) {
+
+  .new_projects_page {
+    width: calc(100% - 280px);
+    margin-left: 280px;
+
+    padding: 75px 55px 100px;
+  }
+
+  .projects_intro,
+  .project_stats,
+  .featured_project_new,
+  .other_projects,
+  .projects_bottom {
+    max-width: 1200px;
+  }
+
+  .projects_intro h1 {
+    font-size: clamp(65px, 6vw, 90px);
+  }
+
+  .featured_grid {
+    grid-template-columns: 1.05fr 0.95fr;
+  }
+
+  .featured_information {
+    padding: 45px;
+  }
+
+  .featured_information h2 {
+    font-size: 48px;
+  }
+
+  .new_project_grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL LAPTOP / DESKTOP
+   1024px - 1199px
+========================================================= */
+
+@media (min-width: 1024px) and (max-width: 1199px) {
+
+  .new_projects_page {
+    width: calc(100% - 240px);
+    margin-left: 240px;
+
+    padding: 65px 35px 90px;
+  }
+
+  .projects_intro {
+    gap: 30px;
+  }
+
+  .projects_intro h1 {
+    font-size: 65px;
+    letter-spacing: -3px;
+  }
+
+  .intro_right {
+    max-width: 320px;
+  }
+
+  .project_stats {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .featured_grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .featured_visual_new {
+    min-height: 470px;
+  }
+
+  .featured_information {
+    padding: 35px;
+  }
+
+  .featured_information h2 {
+    font-size: 42px;
+  }
+
+  .new_project_grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+  }
+
+  .card_visual {
+    height: 230px;
+  }
+
+  .new_card_content {
+    padding: 24px;
+  }
+
+  .new_card_content h3 {
+    font-size: 24px;
+  }
+
+}
+
+
+/* =========================================================
+   TABLET
+   769px - 1023px
+========================================================= */
+
+@media (min-width: 769px) and (max-width: 1023px) {
+
+  .new_projects_page {
+    width: calc(100% - 220px);
+    margin-left: 220px;
+
+    padding: 60px 25px 80px;
+  }
+
+  .projects_intro {
+    display: block;
+  }
+
+  .projects_intro h1 {
+    font-size: 65px;
+    margin-bottom: 25px;
+  }
+
+  .intro_right {
+    max-width: 600px;
+  }
+
+  .project_stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .project_stats div:nth-child(2) {
+    border-right: none;
+  }
+
+  .project_stats div {
+    border-bottom:
+      1px solid rgba(255,255,255,0.12);
+  }
+
+  .featured_grid {
+    grid-template-columns: 1fr;
+  }
+
+  .featured_visual_new {
+    min-height: 400px;
+  }
+
+  .featured_information {
+    padding: 40px;
+  }
+
+  .new_project_grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+  }
+
+  .card_visual {
+    height: 220px;
+  }
+
+  .new_card_content {
+    padding: 22px;
+  }
+
+  .new_card_content h3 {
+    font-size: 23px;
+  }
+
+  .new_card_content p {
+    min-height: auto;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE LANDSCAPE / SMALL TABLET
+   601px - 768px
+========================================================= */
+
+@media (min-width: 601px) and (max-width: 768px) {
+
+  .new_projects_page {
+
+    width: 100%;
+    margin-left: 0;
+
+    padding:
+      90px 25px 70px;
+  }
+
+  .projects_intro {
+    display: block;
+  }
+
+  .projects_intro h1 {
+    font-size: 62px;
+    letter-spacing: -3px;
+  }
+
+  .intro_right {
+    max-width: 600px;
+    margin-top: 25px;
+  }
+
+  .project_stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .project_stats div:nth-child(2) {
+    border-right: none;
+  }
+
+  .project_stats div {
+    border-bottom:
+      1px solid rgba(255,255,255,0.12);
+  }
+
+  .featured_grid {
+    grid-template-columns: 1fr;
+  }
+
+  .featured_visual_new {
+    min-height: 360px;
+  }
+
+  .featured_information {
+    padding: 35px;
+  }
+
+  .featured_information h2 {
+    font-size: 44px;
+  }
+
+  .new_project_grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .card_visual {
+    height: 280px;
+  }
+
+}
+
+
+/* =========================================================
+   NORMAL MOBILE
+   481px - 600px
+========================================================= */
+
+@media (min-width: 481px) and (max-width: 600px) {
+
+  .new_projects_page {
+
+    width: 100%;
+    margin-left: 0;
+
+    padding:
+      85px 20px 60px;
+  }
+
+  .projects_intro {
+    display: block;
+    margin-bottom: 40px;
+  }
+
+  .projects_intro h1 {
+    font-size: 55px;
+    letter-spacing: -3px;
+    line-height: 0.95;
+  }
+
+  .intro_right {
+    margin-top: 25px;
+  }
+
+  .intro_right p {
+    font-size: 14px;
+  }
+
+  .project_stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .project_stats div {
+    padding: 20px 15px;
+  }
+
+  .project_stats div:nth-child(2) {
+    border-right: none;
+  }
+
+  .featured_top {
+    font-size: 8px;
+  }
+
+  .featured_grid {
+    grid-template-columns: 1fr;
+  }
+
+  .featured_visual_new {
+    min-height: 300px;
+  }
+
+  .featured_icon {
+    font-size: 90px;
+  }
+
+  .featured_information {
+    padding: 30px 22px;
+  }
+
+  .featured_information h2 {
+    font-size: 38px;
+  }
+
+  .featured_information p {
+    font-size: 14px;
+  }
+
+  .new_buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .new_live_button,
+  .new_github_button {
+    width: 100%;
+  }
+
+  .new_project_grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card_visual {
+    height: 250px;
+  }
+
+  .new_card_content {
+    padding: 22px;
+  }
+
+  .new_card_content h3 {
+    font-size: 25px;
+  }
+
+  .new_card_content p {
+    min-height: auto;
+  }
+
+  .new_card_buttons {
+    flex-direction: column;
+  }
+
+  .new_card_buttons a {
+    width: 100%;
+  }
+
+  .projects_bottom {
+    padding:
+      60px 15px;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL PHONE
+   361px - 480px
+========================================================= */
+
+@media (min-width: 361px) and (max-width: 480px) {
+
+  .new_projects_page {
+
+    width: 100%;
+    margin-left: 0;
+
+    padding:
+      80px 15px 50px;
+  }
+
+  .projects_intro {
+    display: block;
+    margin-bottom: 35px;
+  }
+
+  .intro_small {
+    font-size: 9px;
+    letter-spacing: 2px;
+  }
+
+  .projects_intro h1 {
+    font-size: 48px;
+    letter-spacing: -2px;
+  }
+
+  .intro_right p {
+    font-size: 13px;
+    line-height: 1.7;
+  }
+
+  .project_stats {
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 50px;
+  }
+
+  .project_stats div {
+    padding: 18px 12px;
+  }
+
+  .project_stats strong {
+    font-size: 25px;
+  }
+
+  .project_stats span {
+    font-size: 8px;
+    letter-spacing: 1px;
+  }
+
+  .featured_top {
+    padding-bottom: 12px;
+    font-size: 7px;
+    letter-spacing: 1px;
+  }
+
+  .featured_grid {
+    grid-template-columns: 1fr;
+  }
+
+  .featured_visual_new {
+    min-height: 260px;
+  }
+
+  .featured_icon {
+    font-size: 75px;
+  }
+
+  .featured_brand {
+    left: 18px;
+    bottom: 18px;
+    font-size: 10px;
+    letter-spacing: 3px;
+  }
+
+  .featured_tag {
+    top: 15px;
+    right: 15px;
+
+    padding: 7px 9px;
+
+    font-size: 6px;
+  }
+
+  .featured_information {
+    padding: 25px 18px;
+  }
+
+  .project_category {
+    font-size: 8px;
+  }
+
+  .featured_information h2 {
+    font-size: 34px;
+    letter-spacing: -1px;
+  }
+
+  .featured_information p {
+    font-size: 13px;
+    line-height: 1.7;
+  }
+
+  .project_tech span {
+    padding: 7px 9px;
+    font-size: 8px;
+  }
+
+  .new_buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .new_live_button,
+  .new_github_button {
+    width: 100%;
+  }
+
+  .projects_section_title h2 {
+    font-size: 35px;
+  }
+
+  .new_project_grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .card_visual {
+    height: 220px;
+  }
+
+  .card_big_icon {
+    font-size: 65px;
+  }
+
+  .card_visual strong {
+    font-size: 10px;
+    letter-spacing: 3px;
+  }
+
+  .new_card_content {
+    padding: 20px;
+  }
+
+  .card_type {
+    font-size: 8px;
+  }
+
+  .new_card_content h3 {
+    font-size: 23px;
+  }
+
+  .new_card_content p {
+    min-height: auto;
+    font-size: 13px;
+  }
+
+  .new_tech span {
+    padding: 7px 9px;
+    font-size: 8px;
+  }
+
+  .new_card_buttons {
+    flex-direction: column;
+  }
+
+  .new_card_buttons a {
+    width: 100%;
+  }
+
+  .projects_bottom {
+    margin-top: 70px;
+    padding: 50px 10px;
+  }
+
+  .projects_bottom h2 {
+    font-size: 38px;
+    letter-spacing: -2px;
+  }
+
+  .projects_bottom p {
+    font-size: 13px;
+  }
+
+  .projects_bottom > a {
+    width: 100%;
+  }
+
+}
+
+
+/* =========================================================
+   VERY SMALL PHONE
+   360px and below
+========================================================= */
+
+@media (max-width: 360px) {
+
+  .new_projects_page {
+
+    width: 100%;
+    margin-left: 0;
+
+    padding:
+      75px 12px 45px;
+  }
+
+  .projects_intro h1 {
+    font-size: 42px;
+    letter-spacing: -2px;
+  }
+
+  .intro_small {
+    font-size: 8px;
+    letter-spacing: 1.5px;
+  }
+
+  .intro_right p {
+    font-size: 12px;
+  }
+
+  .project_stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .project_stats div {
+    padding: 15px 8px;
+  }
+
+  .project_stats strong {
+    font-size: 23px;
+  }
+
+  .project_stats span {
+    font-size: 7px;
+  }
+
+  .featured_visual_new {
+    min-height: 230px;
+  }
+
+  .featured_icon {
+    font-size: 65px;
+  }
+
+  .featured_information {
+    padding: 22px 15px;
+  }
+
+  .featured_information h2 {
+    font-size: 30px;
+  }
+
+  .featured_information p {
+    font-size: 12px;
+  }
+
+  .new_project_card {
+    width: 100%;
+  }
+
+  .card_visual {
+    height: 200px;
+  }
+
+  .card_big_icon {
+    font-size: 55px;
+  }
+
+  .new_card_content {
+    padding: 17px;
+  }
+
+  .new_card_content h3 {
+    font-size: 21px;
+  }
+
+  .new_card_content p {
+    font-size: 12px;
+  }
+
+  .new_card_buttons a {
+    width: 100%;
+  }
+
+  .projects_bottom h2 {
+    font-size: 32px;
+  }
+
+}
+
+
+/* =========================================================
+   PREVENT HORIZONTAL SCROLL
+========================================================= */
+
+html,
+body {
+
+  width: 100%;
+
+  max-width: 100%;
+
+  overflow-x: hidden;
+
+}
+
+
+/* =========================================================
+   PROJECT ELEMENT SAFETY
+========================================================= */
+
+.new_projects_page,
+.new_projects_page *,
+.featured_project_new,
+.new_project_card {
+
+  max-width: 100%;
+
+  box-sizing: border-box;
+
+}
+
+
+/* =========================================================
+   BUTTON CLICK FIX
+========================================================= */
+
+.new_projects_page a {
+
+  position: relative;
+
+  z-index: 50;
+
+  pointer-events: auto;
+
+  cursor: pointer;
+
+}
+
+
+/* =========================================================
+   VISUAL ELEMENTS NEVER BLOCK BUTTONS
+========================================================= */
+
+.card_visual,
+.card_visual *,
+.featured_visual_new,
+.featured_visual_new * {
+
+  pointer-events: none;
+
+}
+
+
+/* =========================================================
+   IMAGES / VIDEO
+========================================================= */
+
+.new_projects_page img {
+
+  max-width: 100%;
+
+  height: auto;
+
+}
+
+
+/* =========================================================
+   LANDSCAPE PHONES
+========================================================= */
+
+@media (max-height: 500px) and (orientation: landscape) {
+
+  .new_projects_page {
+
+    padding-top: 60px;
+
+  }
+
+  .featured_visual_new {
+
+    min-height: 260px;
+
+  }
+
+  .card_visual {
+
+    height: 220px;
+
+  }
+
+}
